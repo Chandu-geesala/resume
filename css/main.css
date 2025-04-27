@@ -1,40 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-Theme Name: Gerold - Personal Portfolio HTML5 Template
-Theme URI: https://themejunction.net/html/gerold/demo/
-Author: Theme-Junction
-Author URI: https://themeforest.net/user/theme-junction
-Description: Gerold - Personal Portfolio HTML5 Template
-
------------------------------------------------------------------------------------
-/************ TABLE OF CONTENTS ***************
-
-  Theme Default CSS
-	Preloader
-	Headers
-	Hero Section
-	Services Section
-	Portfolio Section
-	Popup Section
-	Resume Section
-	Skills Section
-	Testimonials Section
-	Blog Section
-	Blog Standard Page
-	Blog Details Page
-	Contact Section
-	Footer Area
-	Sidebar Menu
-	Sidebar Widgets
-	Breadcrumb Area
-
-**********************************************/
-
-/*
-* ===============================
-*  START: Theme Default CSS
-* ===============================
-*/
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
@@ -1344,16 +1308,20 @@ body.loaded {
 	font-size: 17px;
 }
 .hero-image-box img {
-	border-radius: 38px;
-	-webkit-transform: rotate(4.29deg);
-	-ms-transform: rotate(4.29deg);
-	transform: rotate(4.29deg);
-	position: relative;
-	border: 2px solid var(--tj-theme-secondary);
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+    width: 280px; /* small clean image */
+    height: 360px; /* good height for portfolio photo */
+    object-fit: cover; /* crop nicely without stretch */
+    border-radius: 38px;
+    -webkit-transform: rotate(4.29deg);
+    -ms-transform: rotate(4.29deg);
+    transform: rotate(4.29deg);
+    position: relative;
+    border: 2px solid var(--tj-theme-secondary);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
+
 
 .hero-image-box img:hover {
 	border: 2px solid var(--tj-theme-primary);
@@ -1680,6 +1648,22 @@ body.loaded {
 .portfolio-box .image-box {
 	text-align: center;
 }
+
+.portfolio-box .portfolio-item .image-box img {
+	width: 400px;
+	height: 770px;
+	object-fit: cover;
+	border-radius: 12px;
+  }
+
+  .portfolio-box .portfolio-item .image-box1 img {
+	width: 300px;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 12px;
+  }
+  
+
 .portfolio-box .content-box {
 	position: absolute;
 	bottom: 15px;
